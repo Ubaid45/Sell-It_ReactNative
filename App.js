@@ -7,21 +7,24 @@ import {
   SafeAreaView,
   Platform,
   StatusBar,
+  View,
 } from "react-native";
+import {
+  useDimensions,
+  useDeviceOrientation,
+} from "@react-native-community/hooks";
 
 export default function App() {
+  const { landscape } = useDeviceOrientation();
   return (
     <SafeAreaView style={styles.container}>
-      <Text> I love u sibgha. Hello Native App :)</Text>
-      <TouchableWithoutFeedback onPress={() => console.log("pressed")}>
-        <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri: "https://picsum.photos/200/300",
-          }}
-        />
-      </TouchableWithoutFeedback>
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: "100%",
+          height: landscape ? "100%" : "30%",
+        }}
+      ></View>
     </SafeAreaView>
   );
 }
