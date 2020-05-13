@@ -14,7 +14,7 @@ const WelcomeScreen = () => {
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
         <Text style={styles.tagLine}> Sell what you don't need</Text>
       </View>
-      <View style={styles.buttonContainer}>
+      <View style={styles.buttonsContainer}>
         <AppButton title="Login" />
         <AppButton title="Register" color="secondary" />
       </View>
