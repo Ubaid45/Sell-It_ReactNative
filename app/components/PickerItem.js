@@ -1,6 +1,6 @@
 import React from "react";
 
-import AppTextInput from "./AppTextInput";
+import AppTextInput from "./TextInput";
 import { TouchableOpacity, StyleSheet } from "react-native";
 
 function PickerItem({ item, onPress }) {
