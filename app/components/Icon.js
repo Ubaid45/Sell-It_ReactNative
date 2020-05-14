@@ -1,7 +1,8 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import colors from "../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import React from "react";
+import { View } from "react-native";
+
+import colors from "../config/colors";
 
 function Icon({
   name,
