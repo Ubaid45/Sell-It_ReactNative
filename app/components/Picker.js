@@ -10,14 +10,14 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import Text from "./Text";
-import Screen from "./Screen";
 import defaultStyles from "../config/styles";
 import PickerItem from "./PickerItem";
+import Screen from "./Screen";
 
 function AppPicker({
   icon,
   items,
-  numberOfColumns,
+  numberOfColumns = 1,
   onSelectItem,
   PickerItemComponent = PickerItem,
   placeholder,

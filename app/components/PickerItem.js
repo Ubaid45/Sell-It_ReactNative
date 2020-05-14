@@ -1,19 +1,19 @@
 import React from "react";
-
-import TextInput from "./TextInput";
 import { TouchableOpacity, StyleSheet } from "react-native";
+
+import Text from "./Text";
 
 function PickerItem({ item, onPress }) {
   return (
     <TouchableOpacity onPress={onPress}>
-      <TextInput style={styles.text}>{item.label}</TextInput>
+      <Text style={styles.text}>{item.label}</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   text: {
-    padding: 5,
+    padding: 20,
   },
 });
 
