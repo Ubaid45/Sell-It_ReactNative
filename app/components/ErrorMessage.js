@@ -3,11 +3,13 @@ import { StyleSheet } from "react-native";
 
 import AppText from "./AppText";
 
-const ErrorMessages = ({ error }) => {
+const ErrorMessage = ({ error, visible }) => {
+  if (!(visible && error)) return null;
+
   return <AppText style={styles.error}>{error}</AppText>;
 };
 
-export default ErrorMessages;
+export default ErrorMessage;
 
 const styles = StyleSheet.create({
   error: {
