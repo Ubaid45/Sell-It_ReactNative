@@ -3,10 +3,10 @@ import React from "react";
 import AppTextInput from "./AppTextInput";
 import { TouchableOpacity, StyleSheet } from "react-native";
 
-function PickerItem({ label, onPress }) {
+function PickerItem({ item, onPress }) {
   return (
     <TouchableOpacity onPress={onPress}>
-      <AppTextInput style={styles.text}>{label}</AppTextInput>
+      <AppTextInput style={styles.text}>{item.label}</AppTextInput>
     </TouchableOpacity>
   );
 }
