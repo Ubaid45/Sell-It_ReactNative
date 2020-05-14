@@ -58,8 +58,6 @@ function AccountScreen(props) {
   );
 }
 
-export default AccountScreen;
-
 const styles = StyleSheet.create({
   container: {
     marginVertical: 20,
@@ -68,3 +66,5 @@ const styles = StyleSheet.create({
     backgroundColor: colors.light,
   },
 });
+
+export default AccountScreen;

@@ -48,7 +48,7 @@ function MessagesScreen(props) {
         )}
         ItemSeparatorComponent={ListItemSeparator}
         refreshing={refreshing}
-        onRefresh={() =>
+        onRefresh={() => {
           setMessages([
             {
               id: 2,
@@ -56,8 +56,8 @@ function MessagesScreen(props) {
               description: "D2",
               image: require("../assets/ubaid.jpg"),
             },
-          ])
-        }
+          ]);
+        }}
       />
     </Screen>
   );
