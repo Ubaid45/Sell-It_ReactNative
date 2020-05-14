@@ -3,11 +3,9 @@ import { StyleSheet, View } from "react-native";
 
 import colors from "../../config/colors";
 
-const ListItemSeparator = () => {
+function ListItemSeparator() {
   return <View style={styles.separator} />;
-};
-
-export default ListItemSeparator;
+}
 
 const styles = StyleSheet.create({
   separator: {
@@ -16,3 +14,5 @@ const styles = StyleSheet.create({
     backgroundColor: colors.light,
   },
 });
+
+export default ListItemSeparator;
